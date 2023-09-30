@@ -23,6 +23,6 @@ public class characterMovement : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
         horizontal = Input.GetAxis("Horizontal");
 
-        rigid.velocity = new Vector2(speed*horizontal, speed*vertical);
+        rigid.velocity = new Vector2(speed*horizontal*Time.deltaTime, speed*vertical * Time.deltaTime);
     }
 }
