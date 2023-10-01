@@ -19,7 +19,7 @@ public class lightFollowMouse : MonoBehaviour
 		Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
 		angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
 
-        angle = Mathf.Round(angle / 45) * 45;
+        // angle = Mathf.Round(angle / 45) * 45;
 
 		transform.rotation =  Quaternion.Euler (new Vector3(0f,0f,angle+90f));
 	}

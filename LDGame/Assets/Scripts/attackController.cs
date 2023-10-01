@@ -21,6 +21,7 @@ public class AttackingManagement : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
+            Debug.Log((lookDir.angle / 360));
             anime.SetTrigger("attack");
         }
     }

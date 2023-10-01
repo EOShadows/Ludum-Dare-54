@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class health : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class health : MonoBehaviour
 
     public void takeDamage(float damage){
         currHealth -= damage;
+        if(currHealth <= 0f){
+            handleDeath();
+        }
         Debug.Log(currHealth);
+    }
+
+    void handleDeath(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
