@@ -10,12 +10,14 @@ public class lightFollowMouse : MonoBehaviour
         
     }
 
+	public float angle = 0;
+
     // Update is called once per frame
     void Update () 
 	{
 		Vector2 positionOnScreen = Camera.main.WorldToViewportPoint (transform.position);
 		Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		float angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
+		angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
 
         angle = Mathf.Round(angle / 45) * 45;
 
