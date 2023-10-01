@@ -13,19 +13,12 @@ public class lightFollowMouse : MonoBehaviour
     // Update is called once per frame
     void Update () 
 	{
-		
-		//Get the Screen positions of the object
 		Vector2 positionOnScreen = Camera.main.WorldToViewportPoint (transform.position);
-		
-		//Get the Screen position of the mouse
 		Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		
-		//Get the angle between the points
 		float angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
 
         angle = Mathf.Round(angle / 45) * 45;
 
-		//Ta Daaa
 		transform.rotation =  Quaternion.Euler (new Vector3(0f,0f,angle+90f));
 	}
 
