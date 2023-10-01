@@ -1207,6 +1207,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8930989675196368275, guid: 84f77b36d16968047bc25e398162e6f9, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2984,6 +2988,10 @@ PrefabInstance:
     - target: {fileID: 1137925457903200732, guid: 5e4bc0df4f36c0c45b140e9565bb50a4, type: 3}
       propertyPath: m_Name
       value: HatMan
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251477493111495589, guid: 5e4bc0df4f36c0c45b140e9565bb50a4, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7565453285620781537, guid: 5e4bc0df4f36c0c45b140e9565bb50a4, type: 3}
       propertyPath: m_RootOrder
