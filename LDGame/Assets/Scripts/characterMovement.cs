@@ -6,6 +6,7 @@ public class characterMovement : MonoBehaviour
 {
     public float speed;
     Rigidbody2D rigid;
+    Direction direction;
 
     float vertical;
     float horizontal;
@@ -14,7 +15,7 @@ public class characterMovement : MonoBehaviour
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
-        
+        direction = GetComponent<Direction>();
     }
 
     // Update is called once per frame
@@ -23,6 +24,9 @@ public class characterMovement : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
         horizontal = Input.GetAxis("Horizontal");
 
-        rigid.velocity = new Vector2(speed*horizontal, speed*vertical);
+        rigid.velocity = new Vector2(speed * horizontal, speed * vertical);
+
+        if(vertical != 0 || horizontal != 0)
+            direction.setDirection(new Vector2(horizontal,vertical).normalized);
     }
 }

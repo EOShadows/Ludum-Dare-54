@@ -23,5 +23,7 @@ public class PlayerAnimation : MonoBehaviour
         anime.SetFloat("vertical", rb.velocity.y);
         anime.SetFloat("xDir", direction.getDirection().x);
         anime.SetFloat("yDir", direction.getDirection().y);
+
+        anime.SetBool("idle", rb.velocity == Vector2.zero);
     }
 }

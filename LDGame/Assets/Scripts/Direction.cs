@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Direction : MonoBehaviour
 {
-    private Vector2 current = Vector2.zero;
+    private Vector2 current = Vector2.down;
 
     // Start is called before the first frame update
     void Start()
