@@ -22,6 +22,7 @@ public class health : MonoBehaviour
     }
 
     void handleDeath(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if(gameObject.name == "Character") SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        else Destroy(gameObject);
     }
 }
