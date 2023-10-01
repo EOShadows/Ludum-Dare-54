@@ -5,7 +5,7 @@ using UnityEngine;
 public class characterMovement : MonoBehaviour
 {
     public float speed;
-    public Rigidbody2D rigid;
+    Rigidbody2D rigid;
 
     float vertical;
     float horizontal;
@@ -23,6 +23,6 @@ public class characterMovement : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
         horizontal = Input.GetAxis("Horizontal");
 
-        rigid.velocity = new Vector2(speed*horizontal*Time.deltaTime, speed*vertical * Time.deltaTime);
+        rigid.velocity = new Vector2(speed*horizontal, speed*vertical);
     }
 }
