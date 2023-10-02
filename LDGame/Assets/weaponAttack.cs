@@ -57,8 +57,9 @@ public class weaponAttack : MonoBehaviour
         foreach(Collider2D c in attackArea) {
             if (c != null)
             {
+                Debug.Log(c.name);
                 //Debug.Log("attacked Enemy");
-                c.gameObject.GetComponent<health>().takeDamage(damage);
+                if(c.name == "HatMan" || c.name == "Imposter") c.gameObject.GetComponent<health>().takeDamage(damage);
             }
         }
 
