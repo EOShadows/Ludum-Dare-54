@@ -12,7 +12,7 @@ public class weaponAttack : MonoBehaviour
     public float range = 2f;
     public float damage = 5f;
     public float attackSize = 10f;
-    public float attackSpeed = 3f;
+    public float attackSpeed = 1f;
     private float nextAttack = 0.0f;
     Vector2 positionOnScreen;
     Vector2 mouseOnScreen;
