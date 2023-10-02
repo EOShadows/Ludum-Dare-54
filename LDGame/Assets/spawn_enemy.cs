@@ -39,12 +39,12 @@ public class spawn_enemy : MonoBehaviour
         Vector2 playerpos = player.transform.position;
         if (!behindSpawn)
         {
-            loc = ((Vector2)player.transform.position + (mouseInWorld - playerpos).normalized) * -8;
+            loc = ((mouseInWorld - playerpos).normalized) * -8;
             behindSpawn = true;
         }
         else
         {
-           loc = (Vector2)player.transform.position + ((mouseInWorld - playerpos).normalized) * 8;
+           loc = ((mouseInWorld - playerpos).normalized) * 8;
             behindSpawn = false;
         }
         Instantiate(enemy, loc, Quaternion.Euler(0, 0, 0));
