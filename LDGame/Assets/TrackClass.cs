@@ -14,7 +14,7 @@ public class TrackClass : MonoBehaviour
   
 void Start()
     {
-        MusicShift.Playmusic(gameObject, Full);
+        //MusicShift.Playmusic(gameObject, Full);
     }
 void Update()
     {
