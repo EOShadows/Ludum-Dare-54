@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
-  m_ApplyToSortingLayers: 000000000576b2a60383feec
+  m_ApplyToSortingLayers: 000000000576b2a60383feec8591054c
   m_ShapePath:
   - {x: -0.46959138, y: -0.042150736, z: 0}
   - {x: -0.46357703, y: 0.3491757, z: 0}
@@ -1661,7 +1661,7 @@ MonoBehaviour:
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
-  m_ApplyToSortingLayers: 000000000383feec
+  m_ApplyToSortingLayers: 000000000383feec8591054c
   m_ShapePath:
   - {x: -0.338596, y: -0.44461083, z: 0}
   - {x: -0.3652948, y: 0.04412961, z: 0}
@@ -1822,7 +1822,7 @@ MonoBehaviour:
   m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 000000000383feec0576b2a6
+  m_ApplyToSortingLayers: 000000000383feec0576b2a68591054c
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -2043,8 +2043,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1275433349
+  m_SortingLayer: 3
   m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: b089e81cea2d8475a92b2cbb9f9ee35f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2992,7 +2992,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 000000000576b2a6
+  m_ApplyToSortingLayers: 000000000576b2a68591054c
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -3456,7 +3456,7 @@ MonoBehaviour:
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
-  m_ApplyToSortingLayers: 000000000576b2a60383feec
+  m_ApplyToSortingLayers: 000000000576b2a60383feec8591054c
   m_ShapePath:
   - {x: -0.36577964, y: -0.23837924, z: 0}
   - {x: -0.37706208, y: 0.13683558, z: 0}
@@ -4535,9 +4535,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07, y: -0.05}
+  m_Offset: {x: -0.088025585, y: -0.42576903}
   serializedVersion: 2
-  m_Radius: 0.44
+  m_Radius: 0.5370623
 --- !u!114 &1453937765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4942,7 +4942,7 @@ MonoBehaviour:
   m_UseRendererSilhouette: 1
   m_CastsShadows: 1
   m_SelfShadows: 0
-  m_ApplyToSortingLayers: 000000000383feec
+  m_ApplyToSortingLayers: 000000000383feec8591054c
   m_ShapePath:
   - {x: -0.7235648, y: -0.53282464, z: 0}
   - {x: -0.7644962, y: 0.30160904, z: 0}
@@ -5733,7 +5733,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 000000000383feec0576b2a6
+  m_ApplyToSortingLayers: 000000000383feec0576b2a68591054c
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
