@@ -65,7 +65,7 @@ public class weaponAttack : MonoBehaviour
             {
                 Debug.Log(c.name);
                 //Debug.Log("attacked Enemy");
-                if(c.name == "HatMan" || c.name == "Imposter") c.gameObject.GetComponent<health>().takeDamage(damage);
+                if(c.tag == "Enemy" || c.name == "Imposter") c.gameObject.GetComponent<health>().takeDamage(damage);
             }
         }
 

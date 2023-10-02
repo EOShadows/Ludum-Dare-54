@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 7883772827975011499}
   m_Layer: 7
   m_Name: HatMan
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ Transform:
   m_Children:
   - {fileID: 1466676940032676455}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4251477493111495589
 SpriteRenderer:
@@ -137,7 +137,11 @@ MonoBehaviour:
   player:
     serializedVersion: 2
     m_Bits: 64
+<<<<<<< HEAD
   damage: 100
+=======
+  damage: 20
+>>>>>>> 13e4ffe47ad1f38123a54cd3b81495c11b2e03a6
   Attacksize: 1
 --- !u!50 &9112100763665437786
 Rigidbody2D:
