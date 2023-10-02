@@ -29,8 +29,10 @@ public class inventoryManager : MonoBehaviour
     }
 
     public void fillChest(string[] chestInv){
-        inventory = chestInv;
-        populateChest();
+        if(inventory.Length == 0){
+            inventory = chestInv;
+            populateChest();
+        }
     }
 
     void populateChest(){
