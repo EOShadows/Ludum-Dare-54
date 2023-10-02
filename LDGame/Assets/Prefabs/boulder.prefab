@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1007851487759823706}
   - component: {fileID: 1135817231127278671}
   - component: {fileID: 7636898828383503937}
+  - component: {fileID: 6211721772532476350}
   m_Layer: 0
   m_Name: boulder
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1007851487759823706
 SpriteRenderer:
@@ -153,7 +154,34 @@ MonoBehaviour:
   - {x: -1.3800824, y: -1.2881567, z: 0}
   m_ShapePathHash: 765848943
   m_Mesh: {fileID: 0}
-  m_InstanceId: -49684
+  m_InstanceId: 123956
   m_LocalBounds:
     m_Center: {x: -0.29627848, y: -0.7113081, z: 0}
     m_Extent: {x: 2.060401, y: 0.8368958, z: 0}
+--- !u!50 &6211721772532476350
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5903329143945284598}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
