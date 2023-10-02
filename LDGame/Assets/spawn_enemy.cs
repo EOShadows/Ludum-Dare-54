@@ -27,24 +27,24 @@ public class spawn_enemy : MonoBehaviour
             Spawn();
             nextspawntime = Time.time + spawnrate;
         }
-        if(Time.time > 30f && !nextStage)
+        if (Time.time > 30f && !nextStage)
         {
             spawnrate -= 1;
-            nextStage = true;   
+            nextStage = true;
         }
-        
+
     }
     void Spawn()
     {
         Vector2 playerpos = player.transform.position;
         if (!behindSpawn)
         {
-            loc = ((mouseInWorld - playerpos).normalized) * -8;
+            loc = playerpos + ((mouseInWorld - playerpos).normalized) * -3;
             behindSpawn = true;
         }
         else
         {
-           loc = ((mouseInWorld - playerpos).normalized) * 8;
+            loc = playerpos + ((mouseInWorld - playerpos).normalized) * 3;
             behindSpawn = false;
         }
         Instantiate(enemy, loc, Quaternion.Euler(0, 0, 0));
