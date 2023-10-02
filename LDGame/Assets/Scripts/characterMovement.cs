@@ -18,6 +18,7 @@ public class characterMovement : MonoBehaviour
     GameObject chest;
     public GameObject inventory;
     public GameObject flashlight;
+    public GameObject weapon;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +50,7 @@ public class characterMovement : MonoBehaviour
             else if(chest) chest.GetComponent<chestStuff>().deactivateChest();
             inventory.SetActive(!inventory.activeSelf);
             flashlight.SetActive(!flashlight.activeSelf);
+            weapon.GetComponent<weaponAttack>().enabled = !weapon.GetComponent<weaponAttack>().enabled;
             if(Time.timeScale == 1f) Time.timeScale = 0f;
             else Time.timeScale = 1f;
         }

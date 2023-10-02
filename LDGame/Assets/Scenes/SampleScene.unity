@@ -3834,6 +3834,7 @@ MonoBehaviour:
     m_Bits: 256
   inventory: {fileID: 1609820234}
   flashlight: {fileID: 870171319}
+  weapon: {fileID: 1875417188}
 --- !u!50 &1453937759
 Rigidbody2D:
   serializedVersion: 4
