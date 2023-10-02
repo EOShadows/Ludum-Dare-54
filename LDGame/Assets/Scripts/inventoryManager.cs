@@ -6,6 +6,10 @@ using UnityEngine.EventSystems;
 public class inventoryManager : MonoBehaviour
 {
     public GameObject currentSelectedItem;
+    public string[] inventory;
+    public GameObject[] invPrefabs;
+    public GameObject alternateInventoryUI;
+
     public void changeSelection(GameObject selectItem){
         Debug.Log("Selecting item: " + selectItem);
         currentSelectedItem = selectItem;
@@ -17,6 +21,30 @@ public class inventoryManager : MonoBehaviour
             currentSelectedItem.transform.SetParent(newParent.transform, false);
             currentSelectedItem = null;
         }
+        else if(alternateInventoryUI.GetComponent<inventoryManager>().currentSelectedItem){
+            alternateInventoryUI.GetComponent<inventoryManager>().currentSelectedItem.transform.SetParent(newParent.transform, false);
+            alternateInventoryUI.GetComponent<inventoryManager>().currentSelectedItem = null;
+        }
         EventSystem.current.SetSelectedGameObject(null);
+    }
+
+    public void fillChest(string[] chestInv){
+        inventory = chestInv;
+        populateChest();
+    }
+
+    void populateChest(){
+        Debug.Log("Populating Chest with: " + inventory);
+        int index = 0;
+        foreach(string item in inventory){
+            foreach(GameObject prefab in invPrefabs){
+                if(item == prefab.name){
+                    GameObject newItem = Instantiate(prefab);
+                    newItem.transform.SetParent(transform.GetChild(index));
+                    newItem.GetComponent<RectTransform>().localScale = new Vector3(1f, 1f, 1f);
+                    index += 1;
+                }
+            }
+        }
     }
 }
