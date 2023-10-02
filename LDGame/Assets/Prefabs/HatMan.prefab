@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
+  hurtColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &4578610939972242130
 MonoBehaviour:
   m_ObjectHideFlags: 0

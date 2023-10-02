@@ -1180,6 +1180,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6910951217041223991, guid: 84f77b36d16968047bc25e398162e6f9, type: 3}
+      propertyPath: hurtColor.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2310,6 +2314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  hurtColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!58 &1453937764
 CircleCollider2D:
   m_ObjectHideFlags: 0
