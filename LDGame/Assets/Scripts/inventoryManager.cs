@@ -44,6 +44,7 @@ public class inventoryManager : MonoBehaviour
                     GameObject newItem = Instantiate(prefab);
                     newItem.transform.SetParent(transform.GetChild(index));
                     newItem.GetComponent<RectTransform>().localScale = new Vector3(1f, 1f, 1f);
+                    newItem.GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, 0f);
                     index += 1;
                 }
             }
