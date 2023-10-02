@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 9112100763665437786}
   - component: {fileID: 1041746974213250805}
   - component: {fileID: 5359981053119574450}
+  - component: {fileID: 6803439357007693284}
+  - component: {fileID: 7883772827975011499}
   m_Layer: 7
   m_Name: HatMan
   m_TagString: Untagged
@@ -134,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   damage: 100
   Attacksize: 1
 --- !u!50 &9112100763665437786
@@ -196,9 +198,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.78695816}
+  m_Offset: {x: 0, y: -0.85}
   serializedVersion: 2
-  m_Radius: 2.7673497
+  m_Radius: 3
 --- !u!95 &5359981053119574450
 Animator:
   serializedVersion: 5
@@ -220,6 +222,52 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6803439357007693284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137925457903200732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000000576b2a60383feec0979bfb7
+  m_ShapePath:
+  - {x: -0.16850322, y: -0.9038935, z: 0}
+  - {x: -0.24749523, y: -0.7330885, z: 0}
+  - {x: -0.19891214, y: -0.5346675, z: 0}
+  - {x: 0.001858294, y: -0.4594078, z: 0}
+  - {x: 0.18593454, y: -0.4848609, z: 0}
+  - {x: 0.29378438, y: -0.67835236, z: 0}
+  - {x: 0.22069669, y: -0.8789902, z: 0}
+  - {x: 0.038349092, y: -0.9581146, z: 0}
+  m_ShapePathHash: 430869581
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -183484
+  m_LocalBounds:
+    m_Center: {x: 0.023144573, y: -0.7087612, z: 0}
+    m_Extent: {x: 0.2706398, y: 0.24935341, z: 0}
+--- !u!114 &7883772827975011499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137925457903200732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54172cd3a47a9e5438ae7a2fe35725fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4518203117613957936
 GameObject:
   m_ObjectHideFlags: 0
