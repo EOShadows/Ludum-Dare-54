@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 9112100763665437786}
   - component: {fileID: 1041746974213250805}
   - component: {fileID: 5359981053119574450}
+  - component: {fileID: 8956596332128574299}
+  - component: {fileID: 2306258597855840444}
   m_Layer: 7
   m_Name: HatMan
   m_TagString: Enemy
@@ -220,6 +222,51 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8956596332128574299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137925457903200732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4252001f90b50d43ab31a16625d3e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2306258597855840444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137925457903200732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000000576b2a60383feec
+  m_ShapePath:
+  - {x: 0.041203737, y: -0.96837044, z: 0}
+  - {x: -0.2700312, y: -0.84115505, z: 0}
+  - {x: -0.27810502, y: -0.6281717, z: 0}
+  - {x: -0.101507306, y: -0.504107, z: 0}
+  - {x: 0.18626976, y: -0.50399613, z: 0}
+  - {x: 0.3685857, y: -0.62828255, z: 0}
+  - {x: 0.33705425, y: -0.87080383, z: 0}
+  m_ShapePathHash: -217960821
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -128022
+  m_LocalBounds:
+    m_Center: {x: 0.045240343, y: -0.7361833, z: 0}
+    m_Extent: {x: 0.32334536, y: 0.23218715, z: 0}
 --- !u!1 &4518203117613957936
 GameObject:
   m_ObjectHideFlags: 0
