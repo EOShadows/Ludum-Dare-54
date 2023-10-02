@@ -46,7 +46,7 @@ public class health : MonoBehaviour
     }
 
     void handleDeath(){
-        if(gameObject.name == "Character") SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if(gameObject.name == "Character") SceneManager.LoadScene("DeathMenu");
         else Destroy(gameObject);
     }
 }
