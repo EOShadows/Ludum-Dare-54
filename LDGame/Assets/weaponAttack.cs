@@ -9,11 +9,12 @@ public class weaponAttack : MonoBehaviour
     private Collider2D[] attackArea;
     Animator anim;
     public float angle = 0;
-    public float range = 1f;
+    public float range = 2f;
     public float damage = 5f;
     public float attackSize = 10f;
     Vector2 positionOnScreen;
     Vector2 mouseOnScreen;
+    Vector2 mouseInWorld;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,8 @@ public class weaponAttack : MonoBehaviour
     {
         positionOnScreen = Camera.main.WorldToViewportPoint (transform.position);
 		mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
-		angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
+        mouseInWorld = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
 
         // angle = Mathf.Round(angle / 45) * 45;
 
@@ -34,7 +36,7 @@ public class weaponAttack : MonoBehaviour
         // transform.RotateAround(transform.parent.position, Vector3.forward, angle);
         if(Input.GetButtonDown("Fire1")){
             anim.SetTrigger("attack");
-            Debug.Log(positionOnScreen);
+            //Debug.Log(positionOnScreen);
             //Debug.Log(mouseOnScreen);
             attack();
         }
@@ -45,14 +47,17 @@ public class weaponAttack : MonoBehaviour
 	}
     void attack()
     {
-        Vector2 loc = mouseOnScreen - new Vector2(transform.position.x, transform.position.y);
+        Vector2 loc = mouseInWorld - new Vector2(transform.parent.position.x, transform.parent.position.y);
         Vector2 unit = loc.normalized;
-        //Debug.Log(loc);
-        attackArea = Physics2D.OverlapCircleAll(new Vector2(transform.position.x, transform.position.y) + (unit * range), attackSize / 2, enemy);
+        Debug.Log(mouseOnScreen);
+        //Debug.Log(unit);
+        Vector2 hitloc = new Vector2(transform.parent.position.x + (unit.x * range), transform.parent.position.y + (unit.y * range));
+        //Debug.Log("Attack Location: "+hitloc);
+        attackArea = Physics2D.OverlapCircleAll(hitloc, attackSize / 2, enemy);
         foreach(Collider2D c in attackArea) {
             if (c != null)
             {
-                Debug.Log("attacked Enemy");
+                //Debug.Log("attacked Enemy");
                 c.gameObject.GetComponent<health>().takeDamage(damage);
             }
         }
