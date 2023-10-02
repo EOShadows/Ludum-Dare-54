@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5359981053119574450}
   - component: {fileID: 8956596332128574299}
   - component: {fileID: 2306258597855840444}
+  - component: {fileID: 3257489129846546358}
   m_Layer: 7
   m_Name: HatMan
   m_TagString: Enemy
@@ -39,7 +40,7 @@ Transform:
   m_Children:
   - {fileID: 1466676940032676455}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4251477493111495589
 SpriteRenderer:
@@ -263,10 +264,23 @@ MonoBehaviour:
   - {x: 0.33705425, y: -0.87080383, z: 0}
   m_ShapePathHash: -217960821
   m_Mesh: {fileID: 0}
-  m_InstanceId: -128022
+  m_InstanceId: 31644
   m_LocalBounds:
     m_Center: {x: 0.045240343, y: -0.7361833, z: 0}
     m_Extent: {x: 0.32334536, y: 0.23218715, z: 0}
+--- !u!114 &3257489129846546358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137925457903200732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00040c3d6c3ef0449abd777687b8fb5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitboxRadius: 1
 --- !u!1 &4518203117613957936
 GameObject:
   m_ObjectHideFlags: 0

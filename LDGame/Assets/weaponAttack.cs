@@ -60,12 +60,16 @@ public class weaponAttack : MonoBehaviour
         Vector2 hitloc = new Vector2(transform.parent.position.x + (unit.x * range), transform.parent.position.y + (unit.y * range));
         //Debug.Log("Attack Location: "+hitloc);
         attackArea = Physics2D.OverlapCircleAll(hitloc, attackSize / 2, enemy);
-        foreach(Collider2D c in attackArea) {
+        Debug.DrawLine((Vector3)hitloc + (Vector3.forward * -2), (Vector3)(hitloc + Vector2.right * (attackSize / 2)) + (Vector3.forward * -2),Color.red,2);
+        Debug.DrawLine(transform.position + (Vector3.forward * -2), (Vector3)hitloc + (Vector3.forward * -2), Color.red, 2);
+        foreach (Collider2D c in attackArea) {
             if (c != null)
             {
                 Debug.Log(c.name);
                 //Debug.Log("attacked Enemy");
-                if(c.name.Contains("HatMan") || c.name == "Imposter") c.gameObject.GetComponent<health>().takeDamage(damage);
+                var hitbox = c.GetComponent<EnemyHitbox>();
+                var health = c.GetComponent<health>();
+                if (hitbox != null && health != null) c.gameObject.GetComponent<health>().takeDamage(damage);
             }
         }
 

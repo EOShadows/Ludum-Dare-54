@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1286516134472699941}
   - component: {fileID: 8660771479782529397}
   - component: {fileID: 865637146642931341}
+  - component: {fileID: 8105651344937607902}
   m_Layer: 0
   m_Name: KiteMan
   m_TagString: Untagged
@@ -35,7 +36,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2784676990274285009
 SpriteRenderer:
@@ -115,7 +116,7 @@ MonoBehaviour:
   - {x: 0.052746534, y: -0.7450702, z: 0}
   m_ShapePathHash: 891034477
   m_Mesh: {fileID: 0}
-  m_InstanceId: 78050
+  m_InstanceId: 31728
   m_LocalBounds:
     m_Center: {x: -0.09315571, y: -0.59154725, z: 0}
     m_Extent: {x: 0.18441394, y: 0.1643064, z: 0}
@@ -184,3 +185,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc478e9c55f949540b8a9c7285a6ec89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8105651344937607902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93824866716759877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00040c3d6c3ef0449abd777687b8fb5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitboxRadius: 1
