@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hatman_behaviour : MonoBehaviour
+public class Hatman_Behaviour : MonoBehaviour
 {
     private Animator anime;
     private simpleEnemyMove move;
