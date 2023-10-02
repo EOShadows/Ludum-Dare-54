@@ -137,11 +137,7 @@ MonoBehaviour:
   player:
     serializedVersion: 2
     m_Bits: 64
-<<<<<<< HEAD
   damage: 100
-=======
-  damage: 20
->>>>>>> 13e4ffe47ad1f38123a54cd3b81495c11b2e03a6
   Attacksize: 1
 --- !u!50 &9112100763665437786
 Rigidbody2D:
