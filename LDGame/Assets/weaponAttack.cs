@@ -12,6 +12,8 @@ public class weaponAttack : MonoBehaviour
     public float range = 2f;
     public float damage = 5f;
     public float attackSize = 10f;
+    public float attackSpeed = 3f;
+    private float nextAttack = 0.0f;
     Vector2 positionOnScreen;
     Vector2 mouseOnScreen;
     Vector2 mouseInWorld;
@@ -35,10 +37,14 @@ public class weaponAttack : MonoBehaviour
         
         // transform.RotateAround(transform.parent.position, Vector3.forward, angle);
         if(Input.GetButtonDown("Fire1")){
-            anim.SetTrigger("attack");
-            //Debug.Log(positionOnScreen);
-            //Debug.Log(mouseOnScreen);
-            attack();
+            if (Time.time >= nextAttack)
+            {
+                anim.SetTrigger("attack");
+                //Debug.Log(positionOnScreen);
+                //Debug.Log(mouseOnScreen);
+                attack();
+                nextAttack = Time.time + attackSpeed;
+            }
         }
     }
 
