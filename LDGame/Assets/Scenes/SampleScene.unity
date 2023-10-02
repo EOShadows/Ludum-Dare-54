@@ -3315,6 +3315,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: HatMan
       objectReference: {fileID: 0}
+    - target: {fileID: 1137925457903200732, guid: 5e4bc0df4f36c0c45b140e9565bb50a4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4578610939972242130, guid: 5e4bc0df4f36c0c45b140e9565bb50a4, type: 3}
+      propertyPath: player.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7565453285620781537, guid: 5e4bc0df4f36c0c45b140e9565bb50a4, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3558,9 +3566,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   angle: 0
-  range: 1
+  range: 1.3
   damage: 5
-  attackSize: 1.25
+  attackSize: 1
 --- !u!95 &1875417192
 Animator:
   serializedVersion: 5
