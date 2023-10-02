@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9112100763665437786}
   - component: {fileID: 1041746974213250805}
   - component: {fileID: 5359981053119574450}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HatMan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1466676940032676455}
   - component: {fileID: 6545854410840839339}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
